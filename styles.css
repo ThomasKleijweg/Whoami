@@ -1,16 +1,38 @@
-
-body{
+*{
+    box-sizing: border-box;
     margin: 0px;
 }
-main{
-    margin: 20px;
+
+html, body{
+    min-height: 100%;
+    margin: 0px;
+}
+header{
+    background-color: rgb(70, 64, 64);
+    color: rgb(252, 252, 252);
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 h1{
     text-align: center;
-    padding-top: 10px;
+    padding-top: 7px;
+    font-size: calc(12px + 2.5vw);
 }
+h2{
+    text-align: center;
+    font-size: calc(7px + 1.5vw);
+}
+main{
+    flex: 1;
+    display: flex;
+}
+
 .navbar{
-    position:sticky;
+    position: sticky;
+    top: 0;
     width: 100%;
 }
 .navbar ul{
@@ -32,4 +54,28 @@ h1{
 }
 .navbar a:hover{
     background-color: hsl(0, 0%, 10%);
+}
+.center{
+    box-sizing: border-box;
+    border-left: 1px solid;
+    border-right: 1px solid;
+    box-shadow: 0px 0px 10px rgb(70, 64, 64);
+    border-color: rgb(0, 0, 0);
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 15%;
+    margin-right: 15%;
+    padding: 10px;
+    flex: 1;
+}
+
+footer {
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(70, 64, 64);
+    color: rgb(252, 252, 252);
+    text-align: center;
+}
+footer a{
+    color: rgb(22, 235, 210);
 }
